@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BudgetAI - المستشار المالي الذكي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="badge">🤖 مستشار مالي ذكي</div>
+<h1>BudgetAI</h1>
+<h2>المستشار المالي الذكي لإدارة المصاريف الشخصية</h2>
+<p>تطبيق عربي لتحليل الميزانية الشهرية وتقديم نصائح مالية ذكية بثيم أزرق داكن وسماوي وبرتقالي.</p>
+</section>
+<section class="card">
+<h2>لوحة تحليل الميزانية</h2>
+<label>اختر الهدف المالي</label>
+<select id="goal"><option>زيادة الادخار الشهري</option><option>تقليل المصروفات غير الضرورية</option><option>سداد الديون وتنظيم الالتزامات</option><option>التخطيط لشراء جهاز أو سيارة</option></select>
+<div class="grid">
+<div><label>الدخل الشهري</label><input id="income" type="number" value="5000"></div>
+<div><label>المصاريف الأساسية</label><input id="needs" type="number" value="2500"></div>
+<div><label>المصاريف الكمالية</label><input id="wants" type="number" value="1200"></div>
+<div><label>هدف الادخار</label><input id="savingGoal" type="number" value="800"></div>
+</div>
+<button id="analyze">1. تحليل الميزانية 📊</button>
+<div id="report" class="result"></div>
+</section>
+<section class="card dark">
+<h2>اسأل المستشار الذكي 🤖</h2>
+<textarea id="question">كيف أزيد الادخار بدون حرمان؟</textarea>
+<button id="ask">2. اسأل المستشار الذكي</button>
+<div id="answer" class="answer"></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
